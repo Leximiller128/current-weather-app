@@ -1,8 +1,6 @@
 //variables
 var apiKey = "50d3b65446b704a60f74aa38b79d4648";
 
-//when I open the app I see different weather info
-
 //fetch data
 fetch(
   `http://api.openweathermap.org/geo/1.0/direct?q=Denver&limit=1&appid=${apiKey}`
