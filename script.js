@@ -51,6 +51,7 @@ function fetchForecast(lat, lon) {
       console.log(err);
     });
 }
+
 //city name
 
 //the date
