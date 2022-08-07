@@ -1,8 +1,9 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
 
 Weather app to search for cities current weather and 4 day forecast.
 
-```
+### USER STORY:
+
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -14,11 +15,10 @@ WHEN I view future weather conditions for that city
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
-```
 
-## Deployed GitHub Link: https://leximiller128.github.io/current-weather-app/
+### Deployed GitHub Link: https://leximiller128.github.io/current-weather-app/
 
-### Contributers
+### Contributers:
 
 GitHub- Leximiller128
 Email- leximiller128@gmail.com
