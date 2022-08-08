@@ -4,28 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href = "style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Edu+VIC+WA+NT+Beginner&family=Open+Sans&family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <title>Weather app</title>
+    <title>Weather Dashboard</title>
  <head>
   <body>
-    <div class="card">
-      <div class="search">
-        <input type="text" class="search-bar"></div>
-        <button>Search</button>
-      <div class="weather"></div>
-      <h2 class="City">Weather in denver</h2>
-      <div class="current-date"></div>
-      <img src="" alt="" class="icon"/>
-      <div class="temp">Temp: 51°F</div>
-      <div class="Wind">Wind: 20mph</div>
-<div class="humidity">Humidity: 60%</div>
-<div class="uv-index">UV Index: 3.4</div>
-</div>
+    <div class="container-fluid">
+      <nav class="navbar bg-dark">
+          <p class="header-style mx-auto">Weather Dashboard</p>
+      </nav>
+      <div class="row">
+          <div class="col-4 bg-light">
+              <div class="mt-2">Search for a City:</div>
+              <div class="input-group mb-3">
+                  <input type="text" id="city" class="form-control">
+                  <div class="input-group-append">
+                      <button class="btn btn-primary" type="button" id="searchCity"><i class="fas fa-search"></i></button>
+                  </div>
+              </div>
+              <!-- left column / search list -->
+              <div class="list-group"></div>
+          </div>
+          <div class="col-8">
+              <div class="row p-2">
+                  <div class="card">
+                      <!-- main card with current weather -->
+                      <div class="card-body"></div>
+                  </div>
+              </div>
+                  <div class="row">
+                      <h4>5-Day Forecast:</h4>
+                  </div>
+              <!-- five day forecast -->
+              <div id="weeklyForecast" class="row"></div>
+          </div>
+      </div>
     </div>
-    
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 //variables
 var apiKey = "50d3b65446b704a60f74aa38b79d4648";
-let timeHour = moment().format("dddd, MMMM Do YYYY");
 
 //fetch data
 fetch(
