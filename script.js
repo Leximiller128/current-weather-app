@@ -1,7 +1,7 @@
 //variables
 var apiKey = "50d3b65446b704a60f74aa38b79d4648";
 
-//fetch data
+//fetch data from API
 fetch(
   `http://api.openweathermap.org/geo/1.0/direct?q=Denver&limit=1&appid=${apiKey}`
 )
@@ -19,6 +19,7 @@ fetch(
   .catch(function (err) {
     console.log(err);
   });
+
 //current weather
 function fetchCurrentWeather(lat, lon) {
   fetch(
@@ -34,7 +35,7 @@ function fetchCurrentWeather(lat, lon) {
       console.log(err);
     });
 }
-
+// 5 day forecast
 function fetchForecast(lat, lon) {
   fetch(
     `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&units=imperial&lon=${lon}&appid=${apiKey}`
@@ -51,7 +52,7 @@ function fetchForecast(lat, lon) {
       console.log(err);
     });
 }
-
+console.log("hello world");
 //city name
 
 //the date
