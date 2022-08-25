@@ -10,12 +10,12 @@ font-family: 'Open Sans', sans-serif;
     text-align: center;
   }
 
-/* middle right flexbox */
+/* upper right flexbox */
   .card {
     width:100%;
-    align-content: flex-end;
   }
   
- .fiveDay {
-align-content: flex-end;
+  /* 5-day */
+.weeklyForecast{
+color: green;
  }

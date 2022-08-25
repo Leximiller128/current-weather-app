@@ -52,9 +52,5 @@ function fetchForecast(lat, lon) {
       console.log(err);
     });
 }
-console.log("hello world");
-//city name
-
-//the date
 
 //search bar and search history
