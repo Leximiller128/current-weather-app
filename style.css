@@ -4,18 +4,134 @@ font-family: 'Open Sans', sans-serif;
 }
 
 /* header of page */
-  .header-style {
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
+header {
+    padding: 20px;
   }
 
 /* upper right flexbox */
-  .card {
-    width:100%;
+  h5 {
+    margin-bottom: 0px;
   }
-  
-  /* 5-day */
-.weeklyForecast{
-color: green;
- }
+
+  h1, h5 {
+    text-align: center !important;
+    margin-left: 0px !important;
+  }
+
+  section {
+    padding:20px 5px !important;
+  }
+
+  button {
+    background: rgb(51, 51, 120) !important;
+    color: white !important;
+  }
+
+  .subtitle {
+    background-color: rgb(51, 51, 120);
+    color: white;
+  }
+
+  .card-header {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .newCity {
+    background-color: rgb(156, 156, 223);
+    color: white;
+  }
+
+  .searchedCitiesSection {
+    width: 30% !important;
+  }
+
+  .searchedCitiesSection .card-body {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+  }
+
+  #cityInput {
+    font-size: 0.8rem;
+  }
+
+  input {
+    width: 100% !important;
+    text-transform: capitalize;
+  }
+
+  .listItemSearchedCity {
+    width: 100%; 
+    padding: 0.8rem;
+    text-transform: capitalize;
+  }
+
+  .form-inline .form-group {
+    margin-left: 10px !important;
+    width: 50%
+  }
+
+  .list-group {
+    width: 50%;
+  }
+
+  .currentWeather .col {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .currentData .city {
+    text-transform: capitalize;
+  }
+
+  .currentData .icon {
+    max-width: 400px;
+    max-height: 150px;
+  }
+
+  .weather {
+    text-transform: capitalize;
+  }
+
+  .forecast {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .forecast .col1 {
+    padding: 0px !important;
+  }
+
+.forecast .card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast .temperature,
+.forecast .humidity,
+.forecast .wind-speed,
+.forecast .index,
+.forecast .flag {
+  display: none !important;
+}
+
+@media (min-width:576px) {
+  .forecast .card-body {
+    padding: 15px;
+    text-align: left;
+  }
+  .forecast .temperature,
+  .forecast .humidity,
+  .forecast .wind-speed,
+  .forecast .index,
+  .forecast .flag {
+    display: inline-block !important;
+
+    .currentWeather .col {
+      text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {}
