@@ -17,14 +17,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Edu+VIC+WA+NT+Beginner&family=Open+Sans&family=Reenie+Beanie&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -48,10 +40,15 @@
         <div class="card-body">
           <!-- Search Form -->
           <form class="form-inline">
-            <div class="form-group mb-2">
+            <div class="btn search-button">
               <input type="search" class="form-control" id="cityInput" />
             </div>
-            <button type="submit" class="btn mb-2" id="searchBtn">
+            <button
+              type="submit"
+              class="btn mb-2"
+              id="searchBtn"
+              aria-label="submit search"
+            >
               <i class="fas fa-search-location"></i>
             </button>
           </form>
@@ -206,18 +203,6 @@
         </div>
       </div>
     </section>
-
-    <!-- media query -->
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 900px)"
-      href="widescreen.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 600px)"
-      href="smallscreen.css"
-    />
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
