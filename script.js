@@ -1,9 +1,11 @@
 //variables
+var searchHistory = [];
 var apiKey = "50d3b65446b704a60f74aa38b79d4648";
+var city;
 
 //fetch data from API
 fetch(
-  `http://api.openweathermap.org/geo/1.0/direct?q=Denver&limit=1&appid=${apiKey}`
+  `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
 )
   .then(function (response) {
     return response.json();
@@ -51,6 +53,13 @@ function fetchForecast(lat, lon) {
     .catch(function (err) {
       console.log(err);
     });
+
+  // Click on the 'Seach Icon' button
+  $("#searchBtn").on("click", function (event) {
+    event.preventDefault();
+    city = $("#currentWeather").val();
+    ajaxFlag = 0;
+  });
 }
 
 //search bar and search history
