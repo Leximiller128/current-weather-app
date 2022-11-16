@@ -1,17 +1,10 @@
 //variables
 var searchHistory = [];
 var apiKey = "50d3b65446b704a60f74aa38b79d4648";
-var city;
-
-// Add time and date
-dayjs.extend(window.dayjs_plugin_utc);
-dayjs.extend(window.dayjs_plugin_timezone);
-
-cardTitle.textContent = dayjs.unix(unixTs).tz(timezone).format("M/D/YYYY");
 
 //fetch data from API
 fetch(
-  `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+  `http://api.openweathermap.org/geo/1.0/direct?q=denver&limit=1&appid=${apiKey}`
 )
   .then(function (response) {
     return response.json();
